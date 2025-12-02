@@ -2,8 +2,6 @@ const std = @import("std");
 const input = @embedFile("input.txt");
 //const input = @embedFile("my-input.txt");
 
-const MAX_SPINS: i64 = 100;
-
 fn isInvalidId(n: u64) bool {
     var buf: [20]u8 = undefined;
     const s = std.fmt.bufPrint(&buf, "{}", .{n}) catch unreachable;

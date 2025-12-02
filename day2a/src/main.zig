@@ -2,8 +2,6 @@ const std = @import("std");
 const input = @embedFile("input.txt");
 //const input = @embedFile("my-input.txt");
 
-const MAX_SPINS: i64 = 100;
-
 pub fn main() !void {
     var ranges = std.mem.tokenizeAny(u8, input, ",\n");
     var sum: u64 = 0;
